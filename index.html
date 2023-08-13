@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="eventos.js"></script>
     <script>
-    function saludar() {
-        alert("Hola!")
-    }
+        let saludo = false
+        function saludar() {
+            alert("Hola!")
+            saludo = true
+        }
     </script>
 </head>
 <body>
     <div id="verde">
-        <button onclick="saludar()">Saludar</button>
+        <button id="button" onclick="saludar()">Saludar</button>
     </div>
 </body>
 </html>
